@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.5rem;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	background-color: #eeeeee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+header {
+	padding: 48px 0;
+}
+
+header h1 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	text-align: center;
+	font-size: 2.5rem;
+	line-height: 4rem;
+	margin-bottom: 1.5rem;
+}
+
+.menu .menu--contain {
+	padding: 0 2%;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.menu .menu--contain .menu--contain__card {
+	background-color: rgba(0,0,0,0.6);
+	width: 32%;
+	min-height: 200px;
+	border: 1px solid black;
+	float: left;
+	margin-right: 2%;
+	padding: 48px 24px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu .menu--contain .menu--contain__card:last-child {
+	margin-right: 0;
+}
+
+.menu--contain__card .card-title {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 120px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+}
+
+.menu--contain__card .card-title h4 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.menu--contain__card:first-child .card-title {
+	background-color: #39CCCC;
+}
+
+.menu--contain__card:nth-child(2) .card-title {
+	background-color: #0074D9;
+}
+
+.menu--contain__card:last-child .card-title {
+	background-color: #001f3f;
+}
+
+.menu .menu--contain .menu--contain__card p {
+	color: #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+
+	.menu .menu--contain {
+		padding: 0 4%;
+	}
+
+	.menu .menu--contain .menu--contain__card {
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 4%;
+	}
+
+	.menu .menu--contain .menu--contain__card:nth-child(2) {
+		margin-right: 0;
+	}
+
+	.menu .menu--contain .menu--contain__card:last-child {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	
+	header {
+		padding: 24px 0;
+	}
+	header h1 {
+		margin-bottom: 0;
+	}
+	.menu .menu--contain {
+		padding: 0 6%;
+	}
+
+	.menu .menu--contain .menu--contain__card {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 6%;
+	}
+
+}
